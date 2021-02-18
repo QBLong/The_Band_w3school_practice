@@ -1,3 +1,8 @@
+.clear {
+    /* Cách 2 để giải quyết vấn đề float */
+    clear: both;
+}
+
 /* Reset CSS */
 * {
     padding: 0;
@@ -7,6 +12,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 /*
@@ -142,23 +148,66 @@ html {
 }
 
 #content {
-    height: 100px;
-    position: relative;
-    padding: 64px 16px;
-    margin: 0 45px;
+    
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 0;
+}
+
+#content .section-heading,
+#content .section-sub-heading {
+    text-align: center;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-content {
+    text-align: justify;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .member-list {
+    padding: 32px 0;
+    /* Cách 1 để giải quyết vấn đề float */
+    /* overflow: hidden; */
+}
+
+#content .member-info {
+    float: right;
+    text-align: center;
+    /* Cách 1
+    width: 33.33333%; */
+    /* Cách 2 */
+    width: calc(100% / 3);
+}
+
+#content .member-name {
     font-size: 15px;
 }
 
-#content #about-section {
-    letter-spacing: 4px;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 400;
-    margin: 10px 0;
+#content .member-image {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
 }
 
 #footer {
