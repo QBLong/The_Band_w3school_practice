@@ -15,6 +15,10 @@ html {
     line-height: 1.5;
 }
 
+.text-white {
+    color: #ffffff !important;
+}
+
 /*
 1. Vị trí
 2. Kích thước
@@ -208,6 +212,86 @@ html {
     margin-top: 15px;
     width: 154px;
     border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #ddd;
+}
+
+.ticket-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    /* opacity: 0.6; */
+    font-size: 15px;
+    list-style: none;
+}
+
+.ticket-list span {
+    padding: 3px 8px;
+    margin-left: 16px;
+    opacity: 1.0;
+}
+
+.quantity {
+    background-color: #000;
+    float: right;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+}
+
+.tour-section .places-list {
+    margin: 32px -8px;
+}
+
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.place-body {
+    background-color: #ffffff;
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.place-image {
+    width: 100%;
+    display: block;
+}
+
+.place-image:hover {
+    opacity: 0.6;
+}
+
+.place-time {
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.place-description {
+    margin: 15px 0;
+    line-height: 1.6;
 }
 
 #footer {
