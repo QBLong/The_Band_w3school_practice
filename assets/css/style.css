@@ -1,3 +1,4 @@
+/* Common */
 .clear {
     /* Cách 2 để giải quyết vấn đề float */
     clear: both;
@@ -15,9 +16,33 @@ html {
     line-height: 1.5;
 }
 
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.col-hafl {
+    width: 50%;
+}
+
 .text-white {
     color: #ffffff !important;
 }
+
+.text-center {
+    text-align: center;
+}
+
+/* Main */
 
 /*
 1. Vị trí
@@ -261,12 +286,14 @@ html {
     float: left;
     width: calc(100% / 3);
     padding: 0 8px;
+    padding-bottom: 48px;
 }
 
 .place-body {
     background-color: #ffffff;
     padding: 0 16px;
     font-size: 15px;
+    box-sizing: border-box;
 }
 
 .place-heading {
@@ -292,6 +319,20 @@ html {
 .place-description {
     margin: 15px 0;
     line-height: 1.6;
+}
+
+.place-buy-btn {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000;
+    display: inline-block;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #footer {
