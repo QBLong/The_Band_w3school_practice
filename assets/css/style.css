@@ -19,6 +19,7 @@ html {
 .row {
     margin-left: -8px;
     margin-right: -8px;
+    margin-top: 8px;
 }
 
 .col {
@@ -30,8 +31,9 @@ html {
     width: calc(100% / 3);
 }
 
-.col-hafl {
+.col-half {
     width: 50%;
+    float: left;
 }
 
 .text-white {
@@ -180,11 +182,12 @@ html {
     
 }
 
-#content .content-section {
+#content .content-section,
+#footer .content-section {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 32px 0;
+    padding: 64px 16px;
 }
 
 #content .section-heading,
@@ -335,6 +338,65 @@ html {
     color: #000;
 }
 
+.info {
+    padding: 32px 0;
+}
+
+.name, .email, .message {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.row .submit {
+    float: right;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; 
+    margin-right: 8px;
+}
+
+.submit:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.map {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../image/map.jpg");
+}
+
 #footer {
     
 }
+
+#footer .social-icon {
+    text-align: center;
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+#footer .social-icon li {
+    display: inline;
+}
+
+#footer .social-icon i:hover {
+    opacity: 0.6;
+}
+
+#footer .powered-by,
+#footer .powered-by a {
+    color: #000;
+    opacity: 0.6;
+}
+
+
